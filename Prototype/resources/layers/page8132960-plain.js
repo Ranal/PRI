@@ -374,9 +374,60 @@ rabbit.data.layerStore.addLayerFromHtml('<div xmlns:xsi="http://www.w3.org/2001/
       <div id="__containerId__-layer9727492-670491" style="position: absolute; left: 685px; top: 735px; width: 255px; height: 35px" data-interactive-element-type="default.textinput" class="textinput stencil mobile-interaction-potential-trigger&#xA;&#x9;&#x9;&#x9;" data-review-reference-id="670491" data-stencil-id="670491">\
          <div title=""><textarea id="__containerId__-layer9727492-670491input" rows="" cols="" style="width:253px;height:31px;padding: 0px;border-width:1px;"></textarea></div>\
       </div>\
-      <div id="__containerId__-layer9727492-384577" style="position: absolute; left: 685px; top: 785px; width: 255px; height: 40px" data-interactive-element-type="default.button" class="button stencil mobile-interaction-potential-trigger&#xA;&#x9;&#x9;&#x9;" data-review-reference-id="384577" data-stencil-id="384577">\
-         <div xmlns:helper="java:it.rapidrabb.editor.stencils.helpers.StencilHelper" title=""><button type="button" style="width:255px;height:40px;font-size:1.6666666666666667em;background-color:#b1c51a;padding-left: 0px; padding-right: 0px;" xml:space="preserve" title="" tabindex="10">Sisene<br /></button></div>\
-      </div>\
+      <div id="__containerId__-layer9727492-384577" style="position: absolute; left: 685px; top: 785px; width: 255px; height: 40px" data-interactive-element-type="default.button" class="button pidoco-clickable-element stencil mobile-interaction-potential-trigger&#xA;&#x9;&#x9;&#x9;" data-review-reference-id="384577" data-stencil-id="384577">\
+         <div xmlns:helper="java:it.rapidrabb.editor.stencils.helpers.StencilHelper" title=""><button type="button" style="width:255px;height:40px;font-size:1.6666666666666667em;background-color:#b1c51a;padding-left: 0px; padding-right: 0px;" xml:space="preserve" title="" tabindex="10">Sisene<br /></button></div><script type="text/javascript">\
+			$(document).ready(function(){\
+				rabbit.interaction.manager.registerInteraction(\'__containerId__-layer9727492-384577\', \'interaction4546606\', \
+		{\
+		\
+			\'button\': \'left\'\
+			\
+				,\
+			\
+			\'id\': \'action3124082\'\
+			\
+				,\
+			\
+			\'numberOfFinger\': \'1\'\
+			\
+				,\
+			\
+			\'type\': \'click\'\
+			\
+		}\
+	,  \
+					[\
+						\
+		{\
+		\
+			\'delay\': \'0\'\
+			\
+				,\
+			\
+			\'id\': \'reaction9754613\'\
+			\
+				,\
+			\
+			\'options\': \'reloadOnly\'\
+			\
+				,\
+			\
+			\'target\': \'page9739814\'\
+			\
+				,\
+			\
+			\'transition\': \'none\'\
+			\
+				,\
+			\
+			\'type\': \'showPage\'\
+			\
+		}\
+	\
+					]\
+				);\
+			});\
+		</script></div>\
       <div id="__containerId__-layer9727492-432479" style="position: absolute; left: 775px; top: 590px; width: 138px; height: 26px" data-interactive-element-type="default.text" class="text stencil mobile-interaction-potential-trigger&#xA;&#x9;&#x9;&#x9;" data-review-reference-id="432479" data-stencil-id="432479">\
          <div title="">\
             <div style="height: 31px;width:148px;font-size:1.3333333333333333em;line-height:1.2em;white-space: nowrap;" xml:space="preserve">Sisene Mobiil ID-ga<br /></div>\
@@ -449,11 +500,11 @@ rabbit.data.layerStore.addLayerFromHtml('<div xmlns:xsi="http://www.w3.org/2001/
 			\
 				,\
 			\
-			\'options\': \'reloadNewTab\'\
+			\'options\': \'reloadOnly\'\
 			\
 				,\
 			\
-			\'target\': \'http://id.ee\'\
+			\'target\': \'page9739814\'\
 			\
 				,\
 			\
