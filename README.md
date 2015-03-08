@@ -1,6 +1,5 @@
-## E-Valimised
-"Veebirakenduste loomine" - Projekt
+"Veebirakenduste loomine"
+E-valimiste rakendus
 
+Meeskond:
 Ingrid Sarap, Ranal Saron, Pavel Raav
-
-2015
