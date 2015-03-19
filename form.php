@@ -19,7 +19,7 @@
 			# Number of rows affected
 			$registered = mysqli_affected_rows($dbc);
 			
-			echo " ".$registered." rida andmebaasis muudetud, kõik töötab!";
+			echo " ".$registered." rida andmebaasis muudetud.";
 			
 			
 		}else{
@@ -29,6 +29,7 @@
 	}else{
 		#echo "Error";
 	}
+	
 ?>
 
 Aitäh!

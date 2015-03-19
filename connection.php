@@ -1,17 +1,17 @@
 <?php
 	
-	# Setting variables
+	# Muutujate seadmine
 	$hostname = "localhost";
 	$username = "pri";
 	$dbpassword = "praksiv2rk";
-	$dbname = "test";
+	$dbname = "pri";
 	
-	# Connecting to MySQL
-	# OR die(); for security reasons to drop the connection
-	$dbc = mysqli_connect($hostname, $username, $dbpassword, $dbname) OR die("Could not connect to database. ERROR: ".mysqli_connect_error());
+	# MySQL ühendumine
+	# OR die(); turvaeesmärkidel ühenduse dropimiseks
+	$dbc = mysqli_connect($hostname, $username, $dbpassword, $dbname) OR die("Andmebaasiga ühendumine ebaõnnestus. Error: ".mysqli_connect_error());
 	
-	# Setting the encoding
+	# Encodingu seadmine
 	mysqli_set_charset($dbc, "utf8");
 
-	#echo "<p style='color:blue'>You are connected to <b>".$dbname."</b> database.</p>";
+	#echo "<p style='color:blue'>Oled ühendatud <b>".$dbname."</b> andmebaasi.</p>";
 ?>
