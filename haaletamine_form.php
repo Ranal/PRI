@@ -14,8 +14,7 @@
 			include("connection.php");
 			
 			# Saame kasutada connection.php muutujaid include tõttu
-			# Inserting values to database
-			
+			# Salvestan andmed andmebaasi
 			$kandidaadinr = substr($kandidaat, 0, 3);
 			mysqli_query($dbc, "INSERT INTO valikud(Isikukood,KandidaadiNr) VALUES('$isikukood', '$kandidaadinr')");
 			
@@ -23,23 +22,14 @@
 			$registered = mysqli_affected_rows($dbc);
 			
 			echo " ".$registered." rida andmebaasis muudetud.";
-			
-			# Kuvamiseks SELECT lause koos JOIN lausega
-			# Näiteks:
-			# Isikukood, KandidaadiNr Kandidaadi eesnimi, perekonnanimi vms
-			#if $registered = 1{
-			#$tulemus = mysqli_query($dbc, "SELECT isikukood)
-			#}
-			
-			
+
 		}else{
 			echo "Palun täida kõik väljad!";
 		}
 		
 	}else{
-		echo "Error!";
+		echo "Ilmnes viga. Proovi hiljem uuesti.";
 	}
-	echo "<hr>Tulemus:<br>";
-	#echo $tulemus
+	echo "<h4>Teie valik:<h4>";
+	include("valik.php");
 ?>
-
