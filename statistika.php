@@ -48,6 +48,7 @@
 	 <p class="lead">Siin on nähtav esialgne häälte jagunemine</p>
 	 <p>...</p>
 	 	<!-- tabelina hääletustulemused -->
+         <p>Tabel sisaldab endas statistikat, mis kuvab kandidaatide arvu erakonnas.</p>
          <?php
             include('tabel.php');
             ?>
