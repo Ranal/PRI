@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","pri","praksiv2rk","pri");
+include("connection.php");
 // Kontrollin ühendust
 if (mysqli_connect_errno())
   {
@@ -8,7 +8,7 @@ if (mysqli_connect_errno())
 
 $sql="SELECT kandidaadid.KandidaadiID, kandidaadid.Eesnimi, kandidaadid.Perekonnanimi FROM kandidaadid ORDER BY KandidaadiID DESC LIMIT 1";
 
-if ($result=mysqli_query($con,$sql))
+if ($result=mysqli_query($dbc,$sql))
   {
   // Tõmban andmebaasist read
   // TODO: Kuvada ka ERAKOND, RINGKOND
@@ -20,7 +20,7 @@ if ($result=mysqli_query($con,$sql))
   mysqli_free_result($result);
 }
 
-mysqli_close($con);
+mysqli_close($dbc);
 ?>
 
 <a href="http://evpri.cs.ut.ee">Tagasi avalehele</a>
