@@ -1,14 +1,6 @@
-// javascript funktsioonid
-
-function viga() {
-    
-    alert("Palun täitke kõik väljad!");
-    
-}
-
-
 // Algelised funktsioonid punkt 1.4 jaoks.
 // TODO: Populate from db
+
 function kuvaRingkond() {
     if (document.getElementById("ringkond").value == "1") {
         document.getElementById("valitudRingkond").innerHTML = "<b>Ringkond:</b> Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa";
