@@ -17,9 +17,11 @@
 			# Salvestan andmed andmebaasi
 			mysqli_query($dbc, "INSERT INTO kandidaadid(ErakonnaID,RingkonnaID,Eesnimi,Perekonnanimi) VALUES('$erakond', '$ringkond', '$fname', '$lname')");
 			
-			#TODO: Peale kandideerimist peaks 'ringkonnad' tabelis muutuma vastava ringkonna 'kandidaatideArv' +1 võrra
-			
-			# Muudetud ridade arv
+            # Peale kandideerimist muutub 'ringkonnad' tabelis vastava ringkonna 'kandidaatideArv' +1 võrra
+            $sql = "UPDATE ringkonnad SET KandidaatideArv = KandidaatideArv + 1 WHERE RingkonnaID = '$ringkond'";
+            mysqli_query($dbc, $sql);
+            
+            # Muudetud ridade arv
 			$registered = mysqli_affected_rows($dbc);
 			
 			echo " ".$registered." rida andmebaasis muudetud.";
