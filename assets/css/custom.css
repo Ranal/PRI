@@ -31,3 +31,9 @@ mark {
 .content {
 	padding-top: 0px;
 }
+
+.alert {
+	margin-top: 30px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
