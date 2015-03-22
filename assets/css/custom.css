@@ -12,18 +12,17 @@ body {
 	background-image: url(http://evpri.cs.ut.ee/assets/img/jumbotron.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	}
+}
 
 .jumbotron h1, .jumbotron .h1 {
 text-align: center;
 }
 
-.jumbotron p {
+.jumboPadding p{
 	padding-top: 15px;
-text-align: center;
 }
 
-mark{
+mark {
 	color: #fff;
 	background: rgba(0,0,0,0.5);
 	border-radius: 5px;

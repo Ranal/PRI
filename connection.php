@@ -2,8 +2,8 @@
 	
 	# Muutujate seadmine
 	$hostname = "localhost";
-	$username = "pri";
-	$dbpassword = "praksiv2rk";
+	$username = "root";
+	$dbpassword = "";
 	$dbname = "pri";
 	
 	# MySQL ühendumine

@@ -38,13 +38,73 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
 
     <div class="container">
 	    
 	  	<div class="jumbotron">
-		  <h1><mark>E-valimised</mark></h1>
-		  <p><mark>Elektrooniline hääletamine saabub varsti!</mark></p>
-		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Tutvu kandidaatidega</a></p>
+		  <h1 class="text-center"><mark>E-valimised</mark></h1>
+		  <div class="jumboPadding">
+		  <p class="text-center"><mark>Elektrooniline hääletamine saabub varsti!</mark></p>
+		  </div>
+		  <p>
+			  
+			<!-- Button trigger modal -->
+			<div class="text-center">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Tutvu kandidaatidega</button>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Sulge"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Kandidaadid</h4>
+			      </div>
+			      <div class="modal-body">
+				    <div class="text-center">
+				    <!-- TODO: Prepopulate from database -->
+			        <h3>Erakond 1</h3>
+			        <h4>Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa</h4>
+			        <p class="text-uppercase">
+			        102, Ranal Saron<br>
+			        100, Pavel Raav<br>
+			        </p>
+			        <h4>Tartu linn</h4>
+			        <p class="text-uppercase">
+			        101, Ingrid Sarap<br>
+			        </p>
+					<hr>
+			        <h3>Erakond 2</h3>
+			        <h4>Pärnumaa</h4>
+			        <p class="text-uppercase">
+			        103, Rajesh Koothrappali<br>
+			        107, Solpa Deine<br>
+			        110, Example Example<br>
+			        </p>
+			        <hr>
+			        <h3>Erakond 3</h3>
+			        <h4>Järva- ja Viljandimaa</h4>
+			        <p class="text-uppercase">
+			        104, Sheldon Cooper<br>
+			        106, Kandi Daat<br>
+			        105, Mart Maasikas<br>
+			        </p>
+			        <h4>Tartu linn</h4>
+			        <p class="text-uppercase">
+			        109, Margus Maasik<br>
+			        108, Klavia Tuur<br>
+			        </p>
+				    </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Sulge</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			  
+		  </p>
 		</div>
 
      <div class="content">
@@ -62,6 +122,11 @@
 		
       </div>
     </div><!-- /.container -->
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
     
 	</body>
 </html>
