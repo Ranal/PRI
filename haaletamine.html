@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>E-valimised</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
-    <!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
-
-  <style type="text/css">#idadv {display:none;}</style></head>
-
-  <body>
-
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+		<!-- Bootstrap core CSS -->
+	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	    <!-- Custom styles for this template -->
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	
+	    <title>E-valimised</title>
+	
+	</head>
+	<body>
+      
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -43,7 +44,6 @@
      <div class="content">
 	     
 	 	<h1>Hääletamine</h1>
-        
 	 	<form role="form" method="post" action="haaletamine_form.php">
 		<!-- Ajutine! Kuniks tuleb autentimine -->
 	 	<div class="form-group">
@@ -58,7 +58,7 @@
 	  	 -->
   		<div class="form-group">
   		<label for="ringkond">Ringkond:</label>
-  		<select class="form-control" id="ringkond" name="ringkond">
+  		<select class="form-control" id="ringkond" name="ringkond" >
   		<option value="1">Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa</option>
 	    <option value="2">Tallinna Kesklinna, Lasnamäe ja Pirita linnaosa</option>
 	    <option value="3">Tallinna Mustamäe ja Nõmme linnaosa</option>
@@ -101,8 +101,11 @@
   		<option value="102">102, Ingrid Sarap</option>
   		</select>
 	 	</div>
+        
   		<button type="submit" class="btn btn-default">Kinnita valik</button>
+        
 		</form>
+         
 		
       </div>
     </div><!-- /.container -->
@@ -114,3 +117,6 @@
     <script src=".%2FStarter+Template+for+Bootstrap_files%2Fbootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src=".%2FStarter+Template+for+Bootstrap_files%2Fie10-viewport-bug-workaround.js"></script>
+    
+	</body>
+</html>

@@ -24,11 +24,12 @@
 			echo " ".$registered." rida andmebaasis muudetud.";
 
 		}else{
-			echo "Palun täida kõik väljad!";
+			echo echo "Palun täitke kõik väljad!"
+    exit;
 		}
 		
 	}else{
-		echo "Ilmnes viga. Proovi hiljem uuesti.";
+		echo "<button onclick='myFunction()'>Click</button>";
 	}
 	echo "<h4>Teie valik:<h4>";
 	include("valik.php");

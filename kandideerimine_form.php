@@ -27,11 +27,12 @@
 			
 		}else{
 			echo "Palun täida kõik väljad!";
+            echo "<h4>Kandideerimine õnnestus! Teie esitatud andmed:<h4>";
+	       include("kandideerimise_kinnitus.php");
 		}
 		
 	}else{
 		echo "Ilmnes viga. Proovi hiljem uuesti.";
 	}
-	echo "<h4>Kandideerimine õnnestus! Teie esitatud andmed:<h4>";
-	include("kandideerimise_kinnitus.php");
+	
 ?>
