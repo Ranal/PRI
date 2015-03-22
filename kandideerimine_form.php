@@ -23,17 +23,21 @@
 			$registered = mysqli_affected_rows($dbc);
 			
 			echo " ".$registered." rida andmebaasis muudetud.";
+            echo "<h4>Kandideerimine õnnestus! Teie esitatud andmed:<h4>";
+            include("kandideerimise_kinnitus.php");
             
 			
 			
 		}else{
-			echo "Palun täitke kõik väljad!";
+			echo "<script type='text/javascript'>alert('Palun täitke kõik väljad!')
+            </script>";
+			echo '<a href="http://evpri.cs.ut.ee/haaletamine.html">Tagasi hääletama</a>';
             
 		}
 		
 	}else{
-		echo "Ilmnes viga. Proovi hiljem uuesti.";
+		echo "<script type='text/javascript'>alert('Ilmnes viga, proovige uuesti!')</script>";
+        echo '<a href="http://evpri.cs.ut.ee">Tagasi avalehele</a>';
 	}
-	echo "<h4>Kandideerimine õnnestus! Teie esitatud andmed:<h4>";
-    include("kandideerimise_kinnitus.php");
+	
 ?>

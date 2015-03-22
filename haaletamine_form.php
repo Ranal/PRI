@@ -26,11 +26,15 @@
 	       include("valik.php");
 
 		}else{
-			echo "<script type='text/javascript'>alert('Palun täitke kõik väljad!')</script>";
+            echo "<script type='text/javascript'>alert('Palun täitke kõik väljad!')
+            </script>";
+			echo '<a href="http://evpri.cs.ut.ee/haaletamine.html">Tagasi hääletama</a>';
 		}
 		
 	}else{
-		echo "<button onclick='myFunction()'>Click</button>";
-	}
+		echo "<script type='text/javascript'>alert('Ilmnes viga, proovige uuesti!')</script>";
+        echo '<a href="http://evpri.cs.ut.ee">Tagasi avalehele</a>';
+        
+    }
 
 ?>

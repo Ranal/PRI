@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	
 	    <title>E-valimised</title>
+        <script src="javascript.js"></script> 
 	
 	</head>
 	<body>
@@ -44,6 +45,19 @@
      <div class="content">
 	     
 	 	<h1>Hääletamine</h1>
+        <h4>Lõpuni on jäänud</h4>
+         <script>
+            TargetDate = "03/22/2016 4:00 PM";
+            CountActive = true;
+            ForeColor = "red";
+            CountStepper = -1;
+            LeadingZero = true;
+            DisplayFormat = "%%D%% Päeva, %%H%% h, %%M%% min, %%S%% s";
+            FinishMessage = "It is finally here!";</script>
+        
+    <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
+        
+        <p></p>
 	 	<form role="form" method="post" action="haaletamine_form.php">
 		<!-- Ajutine! Kuniks tuleb autentimine -->
 	 	<div class="form-group">
