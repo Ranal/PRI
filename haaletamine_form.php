@@ -22,15 +22,15 @@
 			$registered = mysqli_affected_rows($dbc);
 			
 			echo " ".$registered." rida andmebaasis muudetud.";
+            echo "<h4>Teie valik:<h4>";
+	       include("valik.php");
 
 		}else{
-			echo echo "Palun täitke kõik väljad!"
-    exit;
+			echo "<script type='text/javascript'>alert('Palun täitke kõik väljad!')</script>";
 		}
 		
 	}else{
 		echo "<button onclick='myFunction()'>Click</button>";
 	}
-	echo "<h4>Teie valik:<h4>";
-	include("valik.php");
+
 ?>
