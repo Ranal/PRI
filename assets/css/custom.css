@@ -41,3 +41,7 @@ mark {
 .justify {
 	text-align: justify;
 }
+
+th {
+	text-align: center;
+}

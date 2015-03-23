@@ -38,17 +38,12 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-	    <div class="alert alert-danger">
-        <a href="index.html" class="btn btn-xs btn-danger pull-right">Tagasi avalehele</a>
-        <strong>Viga:</strong> See leht on valmimisel...
-    	</div>
 
      <div class="content">
-	 <h1>Hääletustulemused</h1>
-	 <p class="lead">Siin on nähtav esialgne häälte jagunemine</p>
-	 <p>...</p>
+	 <h1>Statistika</h1>
+	 <p class="lead">Siin on nähtav esialgne statistika, peagi lisandumas!</p>
+	 
 	 	<!-- tabelina hääletustulemused -->
-         <p>Tabel sisaldab endas statistikat, mis kuvab kandidaatide arvu erakonnas.</p>
          <?php
             include('tabel.php');
             ?>

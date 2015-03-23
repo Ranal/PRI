@@ -25,7 +25,7 @@
 			$registered = mysqli_affected_rows($dbc);
 			
 			echo " ".$registered." rida andmebaasis muudetud.";
-            echo "<h4>Kandideerimine õnnestus! Teie esitatud andmed:<h4>";
+            echo "<h4>Kandideerimine õnnestus! Teie andmed:<h4>";
             include("kandideerimise_kinnitus.php");
             
 			
