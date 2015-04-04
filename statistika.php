@@ -47,9 +47,25 @@
          <?php
             include('tabel.php');
             ?>
-         
-
-    </div>
+        </div>
+        
+        <!-- Statistika kuvamine läbi SSE (Server-side events)- uuendab andmeid laivis ilma et lehte refreshida oleks vaja. -->
+        <div id="antud_haali"></div>
+        <div id="popim_kandidaat"></div>
+        <script>
+            if(typeof(EventSource) !== "undefined") {
+                var source = new EventSource("SSE_haali_kokku.php");
+                source.onmessage = function(event) {
+                document.getElementById("antud_haali").innerHTML = event.data;
+                };
+                var source2 = new EventSource("SSE_top_kandidaat.php");
+                source2.onmessage = function(event) {
+                document.getElementById("popim_kandidaat").innerHTML = event.data;
+                };
+            } else {
+                document.getElementById("antud_haali").innerHTML = "Sorry, your browser does not support server-sent events...";
+            }
+        </script>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

@@ -12,5 +12,6 @@ while($row = mysqli_fetch_array($result)) {
 }
 
 echo "</table>";
-
+mysqli_free_result($result);
+mysqli_close($dbc);
 ?>
