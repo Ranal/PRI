@@ -45,17 +45,20 @@
 
      <div class="content">
 	 <h1>Statistika</h1>
-	 <p class="lead">Siin on nähtav esialgne statistika, peagi lisandumas!</p>
 	 
-	 	<!-- tabelina hääletustulemused -->
-         <?php
-            include('tabel.php');
-            ?>
-        </div>
+        <hr>
         
         <!-- Statistika kuvamine läbi SSE (Server-side events)- uuendab andmeid laivis ilma et lehte refreshida oleks vaja. -->
+        <u><p class="text-center text-uppercase">Häälte arv kokku:</p></u>
+        <font size="20px">
         <div id="antud_haali"></div>
+        </font>
+        <hr>
+        <u><p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p></u>
+        <font size="6px">
         <div id="popim_kandidaat"></div>
+        </font>
+        <hr>
         <script>
             if(typeof(EventSource) !== "undefined") {
                 var source = new EventSource("SSE_haali_kokku.php");
@@ -70,6 +73,13 @@
                 document.getElementById("antud_haali").innerHTML = "Sorry, your browser does not support server-sent events...";
             }
         </script>
+		<!-- tabelina hääletustulemused -->
+		<u><p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p></u>
+         <?php
+            include('tabel.php');
+            ?>
+        </div>
+     </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

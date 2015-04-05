@@ -8,7 +8,7 @@
 		$kandidaat = $_POST["kandidaat"];
 		
 		# Minna if-i kui valitud väljad ei ole tühjad
-		if(!empty($isikukood)){
+		// if(!empty($isikukood)){
 			
 			# Ühendame andmebaasiga
 			include("connection.php");
@@ -25,11 +25,12 @@
             echo "<h4>Teie valik:<h4>";
 	       include("valik.php");
 
-		}else{
+		/*}else{
             echo "<script type='text/javascript'>alert('Palun täitke kõik väljad!')
             </script>";
 			echo '<a href="http://evpri.cs.ut.ee/haaletamine.html">Tagasi hääletama</a>';
 		}
+		*/
 		
 	}else{
 		echo "<script type='text/javascript'>alert('Ilmnes viga, proovige uuesti!')</script>";

@@ -11,8 +11,8 @@ if ($result=mysqli_query($dbc,$sql))
   {
   while ($row=mysqli_fetch_row($result))
     { 
-      echo "data: Seni populaarseim kandidaat on: kandidaat nr {$row[2]}- {$row[0]} {$row[1]},\n";
-      echo "data: kes on kogunud {$row[3]} häält!\n\n";
+      echo "data: nr {$row[2]} - {$row[0]} {$row[1]}\n";
+      echo "data: ({$row[3]} häält)\n\n";
       flush();
     }  
   mysqli_free_result($result);

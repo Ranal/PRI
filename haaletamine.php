@@ -67,10 +67,6 @@
         
 	 	<form role="form" method="post" action="haaletamine_form.php">
 		<!-- Ajutine! Kuniks tuleb autentimine -->
-	 	<div class="form-group">
-	 	<label for="isikukood">Isikukood:</label>
-	 	<input type="text" class="form-control" id="isikukood" name="isikukood">
-  		</div>
   		<!--
 	  		TODO: Prepopulate from database!
 	  		Kuvab valikud otse andmebaasi 'ringkonnad' tabelist. Sellisel kujul:

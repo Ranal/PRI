@@ -26,11 +26,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://evpri.cs.ut.ee/index-members.php">E-valimised</a>
+          <a class="navbar-brand" href="http://evpri.cs.ut.ee/">E-valimised</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://evpri.cs.ut.ee/index-members.php">Avaleht</a></li>
+            <li><a href="http://evpri.cs.ut.ee/">Avaleht</a></li>
             <li><a href="http://evpri.cs.ut.ee/haaletamine.php">Hääletamine</a></li>
             <li><a href="http://evpri.cs.ut.ee/kandideerimine.php">Kandideerimine</a></li>
             <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
@@ -38,23 +38,27 @@
           <ul class="nav navbar-nav navbar-right">
 	        <a href="http://evpri.cs.ut.ee/logout.php"><button type="button" class="btn btn-default navbar-btn">Logi välja</button></a>
           </ul>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
      <div class="content">
 	 <h1>Statistika</h1>
-	 <p class="lead">Siin on nähtav esialgne statistika, peagi lisandumas!</p>
 	 
-	 	<!-- tabelina hääletustulemused -->
-         <?php
-            include('tabel.php');
-            ?>
-        </div>
+        <hr>
         
         <!-- Statistika kuvamine läbi SSE (Server-side events)- uuendab andmeid laivis ilma et lehte refreshida oleks vaja. -->
+        <u><p class="text-center text-uppercase">Häälte arv kokku:</p></u>
+        <font size="20px">
         <div id="antud_haali"></div>
+        </font>
+        <hr>
+        <u><p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p></u>
+        <font size="6px">
         <div id="popim_kandidaat"></div>
+        </font>
+        <hr>
         <script>
             if(typeof(EventSource) !== "undefined") {
                 var source = new EventSource("SSE_haali_kokku.php");
@@ -69,6 +73,13 @@
                 document.getElementById("antud_haali").innerHTML = "Sorry, your browser does not support server-sent events...";
             }
         </script>
+		<!-- tabelina hääletustulemused -->
+		<u><p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p></u>
+         <?php
+            include('tabel.php');
+            ?>
+        </div>
+     </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript
