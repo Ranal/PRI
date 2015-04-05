@@ -1,3 +1,6 @@
+<?php
+	require_once('auth.php');
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -36,8 +39,7 @@
             <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-	        <a href="http://evpri.cs.ut.ee/logout.php"><button type="button" class="btn btn-default navbar-btn">Logi välja</button></a>
-          </ul>
+	        <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

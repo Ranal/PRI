@@ -36,8 +36,8 @@
             <li><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
-	        <a href="http://evpri.cs.ut.ee/login-form.php"><button type="button" class="btn btn-default navbar-btn">Logi sisse</button></a>
-            <a href="http://evpri.cs.ut.ee/register-form.php"><button type="button" class="btn btn-default navbar-btn">Registreeru</button></a>
+            <li><a href="http://evpri.cs.ut.ee/login-form.php">Logi sisse</a></li>
+            <li><a href="http://evpri.cs.ut.ee/register-form.php">Registreeru</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
