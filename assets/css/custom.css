@@ -22,6 +22,10 @@ text-align: center;
 	padding-top: 15px;
 }
 
+.registerPadding{
+	padding-top: 50px;
+}
+
 mark {
 	color: #fff;
 	background: rgba(0,0,0,0.5);

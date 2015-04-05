@@ -31,9 +31,13 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="http://evpri.cs.ut.ee/">Avaleht</a></li>
-            <li><a href="http://evpri.cs.ut.ee/haaletamine.html">Hääletamine</a></li>
-            <li><a href="http://evpri.cs.ut.ee/kandideerimine.html">Kandideerimine</a></li>
+            <li><a href="http://evpri.cs.ut.ee/haaletamine.php">Hääletamine</a></li>
+            <li><a href="http://evpri.cs.ut.ee/kandideerimine.php">Kandideerimine</a></li>
             <li><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+	        <a href="http://evpri.cs.ut.ee/login-form.php"><button type="button" class="btn btn-default navbar-btn">Logi sisse</button></a>
+            <a href="http://evpri.cs.ut.ee/register-form.php"><button type="button" class="btn btn-default navbar-btn">Registreeru</button></a>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -119,6 +123,7 @@
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" />
     	 </a>
+    	 
 		
       </div>
     </div><!-- /.container -->

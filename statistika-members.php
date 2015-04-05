@@ -26,18 +26,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://evpri.cs.ut.ee/">E-valimised</a>
+          <a class="navbar-brand" href="http://evpri.cs.ut.ee/index-members.php">E-valimised</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://evpri.cs.ut.ee/">Avaleht</a></li>
+            <li><a href="http://evpri.cs.ut.ee/index-members.php">Avaleht</a></li>
             <li><a href="http://evpri.cs.ut.ee/haaletamine.php">Hääletamine</a></li>
             <li><a href="http://evpri.cs.ut.ee/kandideerimine.php">Kandideerimine</a></li>
-            <li class="active"><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
+            <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
           </ul>
-            <ul class="nav navbar-nav navbar-right">
-	        <a href="http://evpri.cs.ut.ee/login-form.php"><button type="button" class="btn btn-default navbar-btn">Logi sisse</button></a>
-            <a href="http://evpri.cs.ut.ee/register-form.php"><button type="button" class="btn btn-default navbar-btn">Registreeru</button></a>
+          <ul class="nav navbar-nav navbar-right">
+	        <a href="http://evpri.cs.ut.ee/logout.php"><button type="button" class="btn btn-default navbar-btn">Logi välja</button></a>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
