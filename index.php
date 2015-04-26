@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" manifest="manifest.appcache">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id" content="107686599663-i8bl17uhmoevdgnplnvieauctv91go5e.apps.googleusercontent.com">
 	    
 		<!-- Bootstrap core CSS -->
 	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
@@ -36,6 +37,7 @@
             <li><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
             <li><a href="http://evpri.cs.ut.ee/login-form.php">Logi sisse</a></li>
             <li><a href="http://evpri.cs.ut.ee/register-form.php">Registreeru</a></li>
           </ul>
@@ -115,17 +117,18 @@
 	     <!-- HTML & CSS Validator shortcuts -->
 		 <a href="http://validator.w3.org/check?uri=evpri.cs.ut.ee&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" target="_blank">
 		 <img style="border:0;width:88px;height:31px"
-            src="http://www.citricity.com/images/valid-html5.png"
+            src="http://evpri.cs.ut.ee/assets/img/valid-html5.png"
             alt="Valid CSS!" />
     	 </a>
 	 	 <a href="https://jigsaw.w3.org/css-validator/validator?uri=evpri.cs.ut.ee&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en" target="_blank">
          <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            src="http://evpri.cs.ut.ee/assets/img/vcss.png"
             alt="Valid CSS!" />
     	 </a>
     	 
 		
       </div>
+        
         
     </div><!-- /.container -->
     
@@ -133,6 +136,7 @@
     ================================================== -->
     <script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
 	</body>
 </html>
