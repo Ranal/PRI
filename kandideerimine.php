@@ -64,65 +64,31 @@
   		<label for="lname">Perekonnanimi:</label>
   		<input type="text" class="form-control" id="lname" name="lname">
   		</div>
-  		<div class="form-group">
-  		<!--
-	  		TODO: Prepopulate from database!
-	  		Kuvab valikud otse andmebaasi 'erakonnad' tabelist. Sellisel kujul:
-	  		<option value="erakonnaID">erakonnaNimi</option 
-	  		Mingi mõte hilisemaks:
-	  		Teha erakond tekstiväljana, kui sisestatud erakond puudub, siis lisab selle, muidu LiikmeteArv +1
-	  	 -->
+        <div class="form-group">
   		<label for="erakond">Erakond:</label>
-  		<select class="form-control" id="erakond" name="erakond">
-  		<option value="1">Erakond 1</option>
-	    <option value="2">Erakond 2</option>
-	    <option value="3">Erakond 3</option>
-	    <option value="4">Erakond 4</option>
-	    <option value="5">Erakond 5</option>
-  		</select>
-  		</div>
-  		<!--
-	  		TODO: Prepopulate from database!
-	  		Kuvab valikud otse andmebaasi 'ringkonnad' tabelist. Sellisel kujul:
-	  		<option value="ringkonnaID">ringkonnaNimetus</option 
-	  	 -->
-  		<div class="form-group">
+        <?php
+        require "connection_pdo.php";// connection to database 
+        echo "<select class ='form-control' name=erakond>";
+        echo "<option selecter='selected'>Vali erakond</option>"; 
+        $sql="select * from erakonnad "; // Query to collect data from table 
+        foreach ($dbo->query($sql) as $row) {
+            echo "<option value=$row[ErakonnaID]>$row[ErakonnaNimi]</option>";
+        }
+        echo "</select>";
+        ?>
+        </div>
+        <div class="form-group">
   		<label for="ringkond">Ringkond:</label>
-  		<select class="form-control" id="ringkond" name="ringkond">
-  		<option value="1">Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa</option>
-	    <option value="2">Tallinna Kesklinna, Lasnamäe ja Pirita linnaosa</option>
-	    <option value="3">Tallinna Mustamäe ja Nõmme linnaosa</option>
-	    <option value="4">Harju- ja Raplamaa</option>
-	    <option value="5">Hiiu-, Lääne- ja Saaremaa</option>
-	    <option value="6">Lääne-Virumaa</option>
-	    <option value="7">Ida-Virumaa</option>
-	    <option value="8">Järva- ja Viljandimaa</option>
-	    <option value="9">Jõgeva- ja Tartumaa</option>
-	    <option value="10">Tartu linn</option>
-	    <option value="11">Võru-, Valga- ja Põlvamaa</option>
-	    <option value="12">Pärnumaa</option>
-  		<!-- TODO: Populate dropdown menu from database.
-	  		Mingi poolik kood, millest võib abi olla:
-            <?php
-               $servername = "localhost";
-               $username = "root";
-               $password = "root";
-               $dbname = "myfirstdb";
-            // Create Connection
-            $connection = mysqli_connect($servername, $username, $password, $dbname);
-            // Check connection
-            if (!$connection) {
-                trigger_error("Connection failed: " . mysqli_connect_error());
-            }
-            //Run Query
-            $statement = "SELECT DISTINCT `Nimetus` FROM `ringkonnad` WHERE 1"; // SQL käsk testitud, töötab
-            $result = mysqli_query($connection,$statement) or die(mysqli_error($connection));
-            while(list($category) = mysqli_fetch_row($result)){
-                echo '<option value="'.$category.'">'.$category.'</option>';
-            }
-            mysqli_close($connection);
-            ?>-->
-  		</select>
+        <?php
+        require "connection_pdo.php";// connection to database 
+        echo "<select class ='form-control' name=ringkond>";
+        echo "<option selecter='selected'>Vali ringkond</option>"; 
+        $sql="select * from ringkonnad "; // Query to collect data from table 
+        foreach ($dbo->query($sql) as $row) {
+            echo "<option value=$row[RingkonnaID]>$row[Nimetus]</option>";
+        }
+        echo "</select>";
+        ?>
 		</div>
   		<button type="submit" class="btn btn-default">Kandideeri</button>
 		</form>
