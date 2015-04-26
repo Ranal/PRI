@@ -134,11 +134,8 @@
             <li><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-=======
               <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
->>>>>>> origin/master
-	        <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
+              <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -163,7 +160,7 @@
         <p></p>
 
 	 	<form role="form" name="form" method="POST" action="haaletamine_form.php">
-        <!-- AJAX-->
+
         <div class="form-group">
   		<label for="erakond">Erakond:</label>
         <?php
