@@ -24,8 +24,7 @@
             # Muudetud ridade arv
 			$registered = mysqli_affected_rows($dbc);
 			
-			echo " ".$registered." rida andmebaasis muudetud.";
-            echo "<h4>Kandideerimine õnnestus! Teie andmed:<h4>";
+			//echo " ".$registered." rida andmebaasis muudetud.";
             include("kandideerimise_kinnitus.php");
             
 			
