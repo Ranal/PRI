@@ -16,8 +16,100 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 		<!-- Custom javascript -->
 		<script src="assets/js/custom.js"></script>
-		
-	    <title>E-valimised</title> 
+
+        <script>
+        function kuvaRingkond(str) {
+            if (str == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else { 
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET","getringkond.php?q="+str,true);
+                xmlhttp.send();
+            }
+        }
+        </script>
+        
+<!-- Start Ajax -->
+<script type="text/javascript">
+    function AjaxFunction()
+    {
+    var httpxml;
+    try
+      {
+      // Firefox, Opera 8.0+, Safari
+      httpxml=new XMLHttpRequest();
+      }
+    catch (e)
+      {
+      // Internet Explorer
+              try
+                        {
+                     httpxml=new ActiveXObject("Msxml2.XMLHTTP");
+                        }
+                catch (e)
+                        {
+                    try
+                {
+                httpxml=new ActiveXObject("Microsoft.XMLHTTP");
+                 }
+                    catch (e)
+                {
+                alert("Teie brauser ei toeta Ajaxit!");
+                return false;
+                }
+                }
+      }
+    function stateck() 
+        {
+        if(httpxml.readyState==4)
+          {
+
+    var myarray = JSON.parse(httpxml.responseText);
+    // Remove the options from 2nd dropdown list 
+    for(j=document.form.kandidaat.options.length-1;j>=0;j--)
+    {
+    document.form.kandidaat.remove(j);
+    }
+              
+    var optn = document.createElement("OPTION");
+    optn.text = 'Vali kandidaat';
+    optn.value = '0';
+    document.form.kandidaat.options.add(optn);
+
+    for (i=0;i<myarray.data.length;i++)
+    {
+    var optn = document.createElement("OPTION");
+    optn.text = myarray.data[i].Eesnimi + ' ' + myarray.data[i].Perekonnanimi;
+    optn.value = myarray.data[i].KandidaadiID;
+    document.form   .kandidaat.options.add(optn);
+
+    } 
+          }
+        } // end of function stateck
+        var url="dd.php";
+    var erakond_id=document.getElementById('s1').value;
+    url=url+"?erakond_id="+erakond_id;
+    url=url+"&sid="+Math.random();
+    httpxml.onreadystatechange=stateck;
+    //alert(url);
+    httpxml.open("GET",url,true);
+    httpxml.send(null);
+      }
+</script>
+        
+	    <title>E-valimised</title>
 	
 	</head>
 	<body>
@@ -64,67 +156,43 @@
          </script>
          <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
         <p></p>
-        
-	 	<form role="form" method="post" action="haaletamine_form.php">
-		<!-- Ajutine! Kuniks tuleb autentimine -->
-  		<!--
-	  		TODO: Prepopulate from database!
-	  		Kuvab valikud otse andmebaasi 'ringkonnad' tabelist. Sellisel kujul:
-	  		<option value="ringkonnaID">ringkonnaNimetus</option 
-	  		Mingi lisainfo: http://goo.gl/hxKhOh
-	  	 -->
-  		<div class="form-group">
-  		<label for="ringkond">Ringkond:</label>
-  		<select class="form-control" id="ringkond" name="ringkond" onchange="kuvaRingkond()">
-	  	<option selected="selected">Vali ringkond</option>
-  		<option value="1">Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa</option>
-	    <option value="2">Tallinna Kesklinna, Lasnamäe ja Pirita linnaosa</option>
-	    <option value="3">Tallinna Mustamäe ja Nõmme linnaosa</option>
-	    <option value="4">Harju- ja Raplamaa</option>
-	    <option value="5">Hiiu-, Lääne- ja Saaremaa</option>
-	    <option value="6">Lääne-Virumaa</option>
-	    <option value="7">Ida-Virumaa</option>
-	    <option value="8">Järva- ja Viljandimaa</option>
-	    <option value="9">Jõgeva- ja Tartumaa</option>
-	    <option value="10">Tartu linn</option>
-	    <option value="11">Võru-, Valga- ja Põlvamaa</option>
-	    <option value="12">Pärnumaa</option>
-  		</select>
-  		</div>
-  		<!--
-	  		TODO: Prepopulate from database!
-	  		Kuvab valikud otse andmebaasi 'erakonnad' tabelist. Sellisel kujul:
-	  		<option value="erakonnaID">erakonnaNimi</option 
-	  	 -->
-  		<div class="form-group">
+
+	 	<form role="form" name="form" method="POST" action="haaletamine_form.php">
+        <!-- AJAX-->
+        <div class="form-group">
   		<label for="erakond">Erakond:</label>
-  		<select class="form-control" id="erakond" name="erakond" onchange="kuvaErakond()">
-  		<option selected="selected">Vali erakond</option>
-  		<option value="1">Erakond 1</option>
-	    <option value="2">Erakond 2</option>
-	    <option value="3">Erakond 3</option>
-	    <option value="4">Erakond 4</option>
-	    <option value="5">Erakond 5</option>
-  		</select>
-  		</div>
-  		<!--
-	  		TODO: Prepopulate from database!
-	  		Kuvab valikud otse andmebaasi 'kandidaadid' tabelist. Sellisel kujul:
-	  		<option value="kandidaadiID">kandidaadiID, Eesnimi, Perekonnanimi</option 
-	  	 -->
-  		<div class="form-group">
-  		<label for="kandidaat">Kandidaat:</label>
-  		<select class="form-control" id="kandidaat" name="kandidaat" onchange="kuvaKandidaat()">
-	  	<option selected="selected">Vali kandidaat</option>
-  		<option value="100">100, Pavel Raav</option>
-  		<option value="101">101, Ranal Saron</option>
-  		<option value="102">102, Ingrid Sarap</option>
-  		</select>
-	 	</div>
+        <?php
+        require "connection_pdo.php";// connection to database 
+        echo "<select class ='form-control' name=erakond id='s1' onchange=AjaxFunction();>";
+        echo "<option selecter='selected'>Vali erakond</option>"; 
+        $sql="select * from erakonnad "; // Query to collect data from table 
+        foreach ($dbo->query($sql) as $row) {
+            echo "<option value=$row[ErakonnaID]>$row[ErakonnaNimi]</option>";
+        }
+        echo "</select>";
+        ?>
+        </div>
+        
+        <div class="form-group">
+        <label for="kandidaat">Kandidaat:</label>
+        <select class="form-control" name=kandidaat id='s2' onchange="kuvaRingkond(this.value)">
+        <option selecter="selected">Vali kandidaat</option>
+        </select>
+        </div>
+        
+        <div id="txtHint"><b></b></div>
+        <!-- END AJAX-->
+
   		<button type="submit" class="btn btn-default">Kinnita valik</button>
 		</form>
+         <p></p>
 		
 		<br>
+         
+         <!-- Start -->
+        
+         
+        <!--
 		<blockquote>
 		<div class="justify">
 		Teie valikud:<br>
@@ -133,7 +201,8 @@
 		<div id="valitudKandidaat"></div>
 		</div>
 		</blockquote>
-      </div>
+        -->
+        </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

@@ -22,4 +22,4 @@ if ($result=mysqli_query($dbc,$sql))
 mysqli_close($dbc);
 ?>
 
-<a href="http://evpri.cs.ut.ee">Tagasi avalehele</a>
+<hr /><h4><a href="http://evpri.cs.ut.ee">Tagasi avalehele</a></h4>
