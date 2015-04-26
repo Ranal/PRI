@@ -21,6 +21,7 @@ th {text-align: left;}
 $q = intval($_GET['q']);
 
 $con = mysqli_connect('localhost','pri','praksiv2rk','pri');
+mysqli_set_charset($con,"utf8");
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
