@@ -6,6 +6,7 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id" content="107686599663-i8bl17uhmoevdgnplnvieauctv91go5e.apps.googleusercontent.com">
 	    
 		<!-- Bootstrap core CSS -->
 	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
@@ -35,6 +36,7 @@
             <li><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
+            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
             <li><a href="http://evpri.cs.ut.ee/login-form.php">Logi sisse</a></li>
             <li><a href="http://evpri.cs.ut.ee/register-form.php">Registreeru</a></li>
           </ul>
@@ -61,6 +63,7 @@
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
     
