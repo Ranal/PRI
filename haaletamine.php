@@ -142,9 +142,7 @@ echo "
               Kandidaat:
             </label>
             <select class="form-control" name=kandidaat id='s2' onchange="kuvaRingkond(this.value)">
-              <option selecter="selected">
-                Vali kandidaat
-              </option>
+              <option selecter="selected">Vali kandidaat</option>
             </select>
           </div>
           
@@ -152,7 +150,6 @@ echo "
             <b>
             </b>
           </div>
-          <!-- END AJAX-->
           
           <button type="submit" class="btn btn-default">
             Kinnita valik
@@ -162,8 +159,6 @@ echo "
        </p>
        
        <br>
-       
-       <!-- Start -->
        
        
        <!--
