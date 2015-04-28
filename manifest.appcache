@@ -3,16 +3,6 @@ CACHE MANIFEST
 CACHE:
 index.php
 index-members.php
-kandideerimine.php
-haaletamine.php
-login-failed.php
-kandideerimise_kinnitus.php
-statistika.php
-statistika-members.php
-logout.php
-register-success.php
-register-form.php
-https://apis.google.com/js/platform.js
 assets/js/custom.js
 assets/js/bootstrap.js
 assets/js/jquery.js
