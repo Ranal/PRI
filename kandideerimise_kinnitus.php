@@ -72,7 +72,7 @@ if ($result=mysqli_query($dbc,$sql))
 
 mysqli_close($dbc);
 ?>
-            <hr /><h4><a href="http://evpri.cs.ut.ee">Tagasi avalehele</a></h4>
+            <hr /><h4><a href="http://evpri.cs.ut.ee/index-members.php">Tagasi avalehele</a></h4>
 			  
 		 
 		</div>

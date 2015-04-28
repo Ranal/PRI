@@ -31,18 +31,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://evpri.cs.ut.ee/">E-valimised</a>
+          <a class="navbar-brand" href="http://evpri.cs.ut.ee/index-members.php">E-valimised</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://evpri.cs.ut.ee/">Avaleht</a></li>
+            <li><a href="http://evpri.cs.ut.ee/index-members.php">Avaleht</a></li>
             <li><a href="http://evpri.cs.ut.ee/haaletamine.php">Hääletamine</a></li>
             <li><a href="http://evpri.cs.ut.ee/kandideerimine.php">Kandideerimine</a></li>
-            <li class="active"><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
+            <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
             <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-
 	        <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
           </ul>
         </div><!--/.nav-collapse -->

@@ -38,7 +38,7 @@
 		
 	}else{
 		echo "<script type='text/javascript'>alert('Ilmnes viga, proovige uuesti!')</script>";
-        echo '<a href="http://evpri.cs.ut.ee">Tagasi avalehele</a>';
+        echo '<a href="http://evpri.cs.ut.ee/index-members.php">Tagasi avalehele</a>';
 	}
 	
 ?>
