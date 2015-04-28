@@ -53,15 +53,13 @@
         <hr>
         
         <!-- Statistika kuvamine läbi SSE (Server-side events)- uuendab andmeid laivis ilma et lehte refreshida oleks vaja. -->
-        <u><p class="text-center text-uppercase">Häälte arv kokku:</p></u>
-        <font size="20px">
+        <p class="text-center text-uppercase">Häälte arv kokku:</p>
         <div id="antud_haali"></div>
-        </font>
         <hr>
-        <u><p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p></u>
-        <font size="6px">
+        <p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p>
+
         <div id="popim_kandidaat"></div>
-        </font>
+        
         <hr>
         <script>
             if(typeof(EventSource) !== "undefined") {
@@ -78,12 +76,12 @@
             }
         </script>
 		<!-- tabelina hääletustulemused -->
-		<u><p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p></u>
+		<p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p>
+
          <?php
             include('tabel.php');
             ?>
-        </div>
-     </div>
+        
     </div><!-- /.container -->
     
     

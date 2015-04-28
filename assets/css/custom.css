@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+
 }
 
 .content {
@@ -48,4 +49,17 @@ mark {
 
 th {
 	text-align: center;
+}
+
+#antud_haali {
+    font-size: 35px;
+}
+
+#popim_kandidaat {
+    font-size: 35px;
+}
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
 }

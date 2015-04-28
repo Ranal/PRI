@@ -54,11 +54,11 @@
         
 	 	<form role="form" method="post" action="login-exec.php">
 	 	<div class="form-group">
-  		<label for="lname">Kasutajanimi:</label>
+  		<label for="login">Kasutajanimi:</label>
   		<input type="text" class="form-control" id="login" name="login">
   		</div>
   		<div class="form-group">
-  		<label for="lname">Parool:</label>
+  		<label for="password">Parool:</label>
   		<input type="password" class="form-control" id="password" name="password">
   		</div>	  		
   		<button type="submit" class="btn btn-default">Logi sisse</button>
@@ -66,8 +66,6 @@
     	 
 		
       </div>
-     </div>
-    </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

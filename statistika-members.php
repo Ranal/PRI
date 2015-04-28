@@ -9,6 +9,8 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id" content="107686599663-i8bl17uhmoevdgnplnvieauctv91go5e.apps.googleusercontent.com">
+        
 	    
 		<!-- Bootstrap core CSS -->
 	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
@@ -29,16 +31,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://evpri.cs.ut.ee/index-members.php">E-valimised</a>
+          <a class="navbar-brand" href="http://evpri.cs.ut.ee/">E-valimised</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://evpri.cs.ut.ee/index-members.php">Avaleht</a></li>
+            <li><a href="http://evpri.cs.ut.ee/">Avaleht</a></li>
             <li><a href="http://evpri.cs.ut.ee/haaletamine.php">Hääletamine</a></li>
             <li><a href="http://evpri.cs.ut.ee/kandideerimine.php">Kandideerimine</a></li>
-            <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
+            <li class="active"><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+            <!-- <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li> -->
+
 	        <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -51,15 +55,13 @@
         <hr>
         
         <!-- Statistika kuvamine läbi SSE (Server-side events)- uuendab andmeid laivis ilma et lehte refreshida oleks vaja. -->
-        <u><p class="text-center text-uppercase">Häälte arv kokku:</p></u>
-        <font size="20px">
+        <p class="text-center text-uppercase">Häälte arv kokku:</p>
         <div id="antud_haali"></div>
-        </font>
         <hr>
-        <u><p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p></u>
-        <font size="6px">
+        <p class="text-center text-uppercase">Kõige rohkem hääli kogunud kandidaat:</p>
+
         <div id="popim_kandidaat"></div>
-        </font>
+        
         <hr>
         <script>
             if(typeof(EventSource) !== "undefined") {
@@ -76,18 +78,20 @@
             }
         </script>
 		<!-- tabelina hääletustulemused -->
-		<u><p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p></u>
+		<p class="text-center text-uppercase">Kandidaatide arv erakondade kaupa:</p>
+
          <?php
             include('tabel.php');
             ?>
-        </div>
-     </div>
+        
     </div><!-- /.container -->
+    
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
 	</body>
 </html>

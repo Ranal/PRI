@@ -46,7 +46,7 @@
             <ul class="nav navbar-nav navbar-right">
             <li><a href="http://evpri.cs.ut.ee/login-form.php">Logi sisse</a></li>
             <li><a href="http://evpri.cs.ut.ee/register-form.php">Registreeru</a></li>
-          </ul>
+          </ul> 
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -57,15 +57,13 @@
 		  	  
 		<div class="content">
 
-
+            
 		 	<h1>Oled edukalt välja logitud!</h1>
-        <p align="center"><a href="index.php">Tagasi avalehele</a></p>
+        <p><a href="index.php">Tagasi avalehele</a></p>
 
     	 
 		
       </div>
-     </div>
-    </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript
