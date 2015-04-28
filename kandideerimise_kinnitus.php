@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" manifest="manifest.appcache">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	    <meta charset="utf-8">
