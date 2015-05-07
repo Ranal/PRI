@@ -35,6 +35,10 @@
 	//Sanitize the POST values
 	$login = clean($_POST['login']);
 	$password = clean($_POST['password']);
+    if($_POST['location'] != '') {
+        $redirect = $_POST['location'];
+}
+
 	
 	//Input Validations
 	if($login == '') {
@@ -57,6 +61,8 @@
 	//Create query
 	$qry="SELECT * FROM members WHERE login='$login' AND passwd='".md5($_POST['password'])."'";
 	$result=mysql_query($qry);
+
+
 	
 	//Check whether the query was successful or not
 	if($result) {
