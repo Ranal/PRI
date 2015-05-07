@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-            <?php
-                header("Location:login-form.php?location=" . urlencode($_SERVER['REQUEST_URI']));
-                // Note: $_SERVER['REQUEST_URI'] is your current page
-            ?>
-
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

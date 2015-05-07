@@ -35,9 +35,10 @@
 	//Sanitize the POST values
 	$login = clean($_POST['login']);
 	$password = clean($_POST['password']);
-    if($_POST['location'] != '') {
-        $redirect = $_POST['location'];
-}
+if(isset($_SESSION['url'])) 
+   $url = $_SESSION['url']; // holds url for last page visited.
+else 
+   $url = "/index-members.php"; 
 
 	
 	//Input Validations
@@ -74,7 +75,7 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstname'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
 			session_write_close();
-			header("location: index-members.php");
+			header("location: http://evpri.cs.ut.ee".$url);
 			exit();
 		}else {
 			//Login failed
