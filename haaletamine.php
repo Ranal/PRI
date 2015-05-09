@@ -17,6 +17,7 @@ require_once('auth.php');
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <!-- Custom javascript -->
     <script src="assets/js/custom.js"></script>
+
       
       <title>
         E-valimised
