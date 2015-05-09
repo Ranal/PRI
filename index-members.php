@@ -109,28 +109,9 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>
-			  
-		 
+            </div>
 		</div>
 
-     <div class="content">
-	     <!-- HTML & CSS Validator shortcuts -->
-		 <a href="http://validator.w3.org/check?uri=evpri.cs.ut.ee&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" target="_blank">
-		 <img style="border:0;width:88px;height:31px"
-            src="http://evpri.cs.ut.ee/assets/img/valid-html5.png"
-            alt="Valid CSS!" />
-    	 </a>
-	 	 <a href="https://jigsaw.w3.org/css-validator/validator?uri=evpri.cs.ut.ee&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en" target="_blank">
-         <img style="border:0;width:88px;height:31px"
-            src="http://evpri.cs.ut.ee/assets/img/vcss.png"
-            alt="Valid CSS!" />
-    	 </a>
-    	 
-    	 <h1>Tere tulemast, <?php echo $_SESSION['SESS_FIRST_NAME'];?>!</h1>
-		 <p>Nüüd võid kandideerida ning hääletada! </p>
-		
-      </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript
