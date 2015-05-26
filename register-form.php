@@ -56,14 +56,8 @@
       </div>
     </nav>
     
-    <div class="container">
-
-	    
-		  	  
-		<div class="content">
-
-
-		 	<h1>Registreerumine</h1>
+    <div class="container form">
+        <h1>Registreerumine</h1>
 	 	<p class="lead">Kasutajaks registreerimiseks täida allolev vorm:</p>
         
 	 	<form role="form" method="post" action="register-exec.php">
@@ -89,9 +83,6 @@
   		</div>  		  		
   		<button type="submit" class="btn btn-default">Registreeri</button>
 		</form>
-    	 
-		
-      </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

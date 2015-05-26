@@ -83,9 +83,9 @@ require_once('auth.php');
       </div>
       </nav>
       
-      <div class="container">
+      <div class="container form">
         
-        <div class="content">
+        <!--<div class="content">-->
           
           <h1>
             Hääletamine
@@ -176,7 +176,7 @@ Teie valikud:
 </div>
 </blockquote>
 -->
-      </div>
+     <!-- </div>-->
       </div>
       <!-- /.container -->
       

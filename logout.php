@@ -54,19 +54,10 @@ session_destroy();
       </div>
     </nav>
     
-    <div class="container">
-
-	    
-		  	  
-		<div class="content">
-
-            
+    <div class="container form">
 		 	<h1>Oled edukalt välja logitud!</h1>
         <p><a href="index.php">Tagasi avalehele</a></p>
 
-    	 
-		
-      </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

@@ -48,9 +48,7 @@
       </div>
     </nav>
 
-    <div class="container">
-
-     <div class="content">
+    <div class="container form">
 	     
 	 	<h1>Kandideerimine</h1>
 	 	<p class="lead">Valimistel kandideerimiseks täida allolev vorm:</p>
@@ -93,7 +91,6 @@
   		<button type="submit" class="btn btn-default">Kandideeri</button>
 		</form>
 		
-      </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

@@ -44,16 +44,8 @@
     </nav>
     
     <div class="container">
-
-	    
-		  	  
-		<div class="content">
-
-
-		 	<h2>Registreerumine õnnestus!</h2>
+        <h2>Registreerumine õnnestus!</h2>
 	 	<p>Võid nüüd sisse logida.</a></p>
-
-    </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

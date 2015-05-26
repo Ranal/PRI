@@ -43,13 +43,7 @@
       </div>
     </nav>
     
-    <div class="container">
-
-	    
-		  	  
-		<div class="content">
-
-
+    <div class="container form">
 		 	<h1>Logi sisse</h1>
         
 	 	<form role="form" method="post" action="login-exec.php">
@@ -63,9 +57,7 @@
   		</div>	  		
   		<button type="submit" class="btn btn-default">Logi sisse</button>
 		</form>
-    	 
-		
-      </div>
+
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

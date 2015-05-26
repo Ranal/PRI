@@ -47,7 +47,7 @@
       </div>
     </nav>
 
-     <div class="content">
+     <div class="container form">
 	 <h1>Statistika</h1>
 	 
         <hr>
