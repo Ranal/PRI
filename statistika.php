@@ -38,8 +38,6 @@
             <li class="active"><a href="http://evpri.cs.ut.ee/statistika.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
-            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-            
             <li><a href="http://evpri.cs.ut.ee/login-form.php">Logi sisse</a></li>
             <li><a href="http://evpri.cs.ut.ee/register-form.php">Registreeru</a></li>
           </ul>

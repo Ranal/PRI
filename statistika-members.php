@@ -41,7 +41,6 @@
             <li class="active"><a href="http://evpri.cs.ut.ee/statistika-members.php">Statistika</a></li>
           </ul>
             <ul class="nav navbar-nav navbar-right">
-            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
 	        <li><a href="http://evpri.cs.ut.ee/logout.php">Logi välja</a></li>
           </ul>
         </div><!--/.nav-collapse -->

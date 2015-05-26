@@ -69,10 +69,6 @@ require_once('auth.php');
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <div class="g-signin2" data-onsuccess="onSignIn">
-              </div>
-            </li>
-            <li>
               <a href="http://evpri.cs.ut.ee/logout.php">
                 Logi välja
               </a>
