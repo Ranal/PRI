@@ -47,9 +47,7 @@
     </nav>
     
 
-    <div class="container">
-        <div class="content">
-	    
+    <div class="container form">
 <?php
 include("connection.php");
 // Kontrollin ühendust
@@ -76,7 +74,6 @@ mysqli_close($dbc);
 			  
 		 
 		</div>
-      </div>
     </div><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

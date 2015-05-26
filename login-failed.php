@@ -44,14 +44,9 @@
       </div>
     </nav>
     
-    <div class="container">
+    <div class="container form">
 
-	    
-		  	  
-		<div class="content">
-
-
-		 	<h2>Sisselogimine ebaõnnestus!</h2>
+        <h2>Sisselogimine ebaõnnestus!</h2>
 	 	<p>Vale kasutajanimi või parool.</p>
 
     </div>

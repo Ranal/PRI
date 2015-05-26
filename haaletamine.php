@@ -16,13 +16,13 @@ require_once('auth.php');
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <!-- Custom javascript -->
-    <script src="assets/js/custom.js"></script>
-
-      
-      <title>
-        E-valimised
-      </title>
-      
+    <script src="assets/js/custom.js">
+    </script>
+    
+    <title>
+      E-valimised
+    </title>
+    
   </head>
   <body>
     
@@ -81,39 +81,37 @@ require_once('auth.php');
         </div>
         <!--/.nav-collapse -->
       </div>
-      </nav>
-      
-      <div class="container form">
+    </nav>
+    
+    <div class="container form">
         
-        <!--<div class="content">-->
+        <h1>
+          Hääletamine
+        </h1>
+        <p class="lead">
+          Lõpuni on jäänud:
+        </p>
+        <script>
+          TargetDate = "03/22/2016 4:00 PM";
+          CountActive = true;
+          ForeColor = "black";
+          CountStepper = -1;
+          LeadingZero = true;
+          DisplayFormat = "%%D%% päeva, %%H%% tundi, %%M%% minutit, %%S%% sekundit";
+          FinishMessage = "It is finally here!";
+        </script>
+        <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
+        </script>
+        <p>
+        </p>
+        
+        <form role="form" name="form" method="POST" action="haaletamine_form.php">
           
-          <h1>
-            Hääletamine
-          </h1>
-          <p class="lead">
-            Lõpuni on jäänud:
-          </p>
-          <script>
-            TargetDate = "03/22/2016 4:00 PM";
-           CountActive = true;
-           ForeColor = "black";
-           CountStepper = -1;
-           LeadingZero = true;
-           DisplayFormat = "%%D%% päeva, %%H%% tundi, %%M%% minutit, %%S%% sekundit";
-           FinishMessage = "It is finally here!";
-       </script>
-       <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-       </script>
-       <p>
-       </p>
-       
-       <form role="form" name="form" method="POST" action="haaletamine_form.php">
-         
-         <div class="form-group">
-           <label for="erakond">
-             Erakond:
-           </label>
-           <?php
+          <div class="form-group">
+            <label for="erakond">
+              Erakond:
+            </label>
+            <?php
 require "connection_pdo.php";// connection to database 
 echo "
 <select class ='form-control' name=erakond id='s1' onchange=AjaxFunction();>
@@ -136,59 +134,45 @@ echo "
 </select>
 ";
 ?>
-          </div>
-          
-          <div class="form-group">
-            <label for="kandidaat">
-              Kandidaat:
-            </label>
-            <select class="form-control" name=kandidaat id='s2' onchange="kuvaRingkond(this.value)">
-              <option selecter="selected">Vali kandidaat</option>
-            </select>
-          </div>
-          
-          <div id="txtHint">
-            <b>
-            </b>
-          </div>
-          
-          <button type="submit" class="btn btn-default">
-            Kinnita valik
-          </button>
-       </form>
-       <p>
-       </p>
-       
-       <br>
-       
-       
-       <!--
-<blockquote>
-<div class="justify">
-Teie valikud:
-<br>
-<div id="valitudRingkond">
-</div>
-<div id="valitudErakond">
-</div>
-<div id="valitudKandidaat">
-</div>
-</div>
-</blockquote>
--->
-     <!-- </div>-->
-      </div>
-      <!-- /.container -->
-      
-      
-      <!-- Bootstrap core JavaScript
+         </div>
+         
+         <div class="form-group">
+           <label for="kandidaat">
+             Kandidaat:
+           </label>
+           <select class="form-control" name=kandidaat id='s2' onchange="kuvaRingkond(this.value)">
+             <option selecter="selected">
+               Vali kandidaat
+             </option>
+           </select>
+         </div>
+         
+         <div id="txtHint">
+           <b>
+           </b>
+         </div>
+         
+         <button type="submit" class="btn btn-default">
+           Kinnita valik
+         </button>
+        </form>
+        <p>
+        </p>
+        
+        <br>
+        
+    </div>
+    <!-- /.container -->
+    
+    
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-      <script src="assets/js/jquery.js">
-      </script>
-      <script src="assets/js/bootstrap.js">
-      </script>
-      <script src="https://apis.google.com/js/platform.js" async defer>
-      </script>
-      
+    <script src="assets/js/jquery.js">
+    </script>
+    <script src="assets/js/bootstrap.js">
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+    </script>
+    
   </body>
 </html>
